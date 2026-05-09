@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Panel Katar Jatirangga</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      color: #ffffff;
+      padding: 20px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 500px;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.08);
+      padding: 40px 30px;
+      border-radius: 20px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    }
+
+    h1 {
+      font-size: 30px;
+      margin-bottom: 30px;
+    }
+
+    .button-group {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .btn {
+      display: block;
+      padding: 16px 24px;
+      background: #22c55e;
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 17px;
+      font-weight: bold;
+      border-radius: 12px;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 12px rgba(34, 197, 94, 0.4);
+    }
+
+    .btn:hover {
+      background: #16a34a;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(34, 197, 94, 0.5);
+    }
+
+    .btn.secondary {
+      background: #3b82f6;
+      box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
+    }
+
+    .btn.secondary:hover {
+      background: #2563eb;
+      box-shadow: 0 8px 20px rgba(59, 130, 246, 0.5);
+    }
+
+    .footer {
+      margin-top: 25px;
+      font-size: 14px;
+      opacity: 0.7;
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 24px;
+      }
+
+      .btn {
+        font-size: 15px;
+        padding: 14px 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Admin Panel Katar Jatirangga</h1>
+
+    <div class="button-group">
+      <a
+        class="btn"
+        href="https://karang-taruna-jatirangga.page.gd/wp-admin/edit.php?s&post_status=all&post_type=post&action=-1&m=0&cat=1&filter_action=Saring&paged=1&action2=-1"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Upload Postingan Web Katar
+      </a>
+
+      <a
+        class="btn secondary"
+        href="https://karang-taruna-jatirangga.page.gd"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Tampilan Web Static
+      </a>
+    </div>
+
+    <div class="footer">
+      © 2026 Karang Taruna Jatirangga
+    </div>
+  </div>
+</body>
+</html>
